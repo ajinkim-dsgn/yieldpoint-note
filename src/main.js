@@ -77,6 +77,8 @@ $('props').innerHTML = propsSVG();
 
 const PAGES = buildPages(COPY[lang]);
 for (const el of leavesEl.querySelectorAll('.face-inner')) el.innerHTML = PAGES[el.dataset.page];
+// 3D 책은 스크린리더에서 숨김 — 링크는 아래 텍스트 사본에서 접근, 탭 이동에서는 제외
+for (const a of leavesEl.querySelectorAll('a')) a.tabIndex = -1;
 
 // 스크린리더·검색용 텍스트
 const sr = $('srPages');
@@ -263,6 +265,7 @@ let drag = null;
 
 scene.addEventListener('pointerdown', (e) => {
   if (!ready) return;
+  if (e.target.closest('a')) return; // 연락처 링크는 넘김 대신 열기
   const spineX = single ? innerWidth / 2 : spine.getBoundingClientRect().left;
   const fwd = e.clientX > spineX;
   const i = fwd ? state : state - 1;

@@ -221,6 +221,7 @@ body.is-ready .lights { display: none; }
 .page--left::after  { background: linear-gradient(270deg, rgba(0,0,0,.16), rgba(0,0,0,.04) 5%, transparent 12%, transparent 96%, rgba(0,0,0,.05)); }
 
 .page b { font-weight: 600; }
+.page a { color: var(--blue); text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; cursor: pointer; }
 .blue { color: var(--blue); }
 
 .ph, .pf {

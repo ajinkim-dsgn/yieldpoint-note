@@ -110,7 +110,9 @@ export const COPY = {
         ['Printing', 'Digital'],
         ['Date', '2026.10'],
         ['Place', 'Busan'],
-        ['Contact', 'Behance · Instagram'],
+        ['Email', '<a href="mailto:roxannekim522@gmail.com">roxannekim522@gmail.com</a>'],
+        ['LinkedIn', '<a href="https://www.linkedin.com/in/ajinkimmm" target="_blank" rel="noopener">linkedin.com/in/ajinkimmm</a>'],
+        ['Behance', '<a href="https://www.behance.net/roxannekim2" target="_blank" rel="noopener">behance.net/roxannekim2</a>'],
       ],
     },
 
